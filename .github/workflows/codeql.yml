@@ -1,0 +1,13 @@
+name: CodeQL
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
+
+jobs:
+  codeql:
+    uses: snampo768/build_tools_workflows/.github/workflows/codeql-common.yml@main
+    with:
+      repo_type: rdkb
