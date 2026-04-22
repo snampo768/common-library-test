@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [develop]
 
+permissions:
+  contents: read
+  security-events: write
+
 jobs:
   codeql:
     uses: snampo768/build_tools_workflows/.github/workflows/codeql-common.yml@main
