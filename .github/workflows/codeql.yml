@@ -11,3 +11,4 @@ jobs:
     uses: snampo768/build_tools_workflows/.github/workflows/codeql-common.yml@main
     with:
       repo_type: rdkb
+      container_image: ghcr.io/rdkcentral/docker-rdk-ci:latest
